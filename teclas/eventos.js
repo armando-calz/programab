@@ -18,7 +18,6 @@ dibujarLinea(colorLinea, 40, 1, 1380, 1, paper, grozor.MARCO);
 dibujarLinea(colorLinea, 40, 1, 40, 599, paper, grozor.MARCO);
 dibujarLinea(colorLinea, 40, 599, 1380, 599, paper, grozor.MARCO);
 
-
 function dibujarLinea(color, x_inicial, y_inicial, x_final, y_final, lienzo, grozor)
 {
   lienzo.beginPath();
@@ -52,31 +51,29 @@ function pararMouse(evento)
 }
 function dibujarTeclado(evento)
 {
-  var colorcito = "white";
   var espacio = "black";
   var movimiento = 20;
-  var movEspacio = 50;
   switch (evento.keyCode)
   {
     case teclas.UP:
-    dibujarLinea(colorcito, x, y, x, y - movimiento, paper, grozor.TECLADO);
+    dibujarLinea(colorLinea, x, y, x, y - movimiento, paper, grozor.TECLADO);
     y = y - movimiento;
     break;
     case teclas.DOWN:
-    dibujarLinea(colorcito, x, y, x, y + movimiento, paper, grozor.TECLADO);
+    dibujarLinea(colorLinea, x, y, x, y + movimiento, paper, grozor.TECLADO);
     y = y + movimiento;
     break;
     case teclas.LEFT:
-    dibujarLinea(colorcito, x, y, x - movimiento, y, paper, grozor.TECLADO);
+    dibujarLinea(colorLinea, x, y, x - movimiento, y, paper, grozor.TECLADO);
     x = x - movimiento;
     break;
     case teclas.RIGHT:
-    dibujarLinea(colorcito, x, y, x + movimiento, y, paper, grozor.TECLADO);
+    dibujarLinea(colorLinea, x, y, x + movimiento, y, paper, grozor.TECLADO);
     x = x + movimiento;
     break;
     case teclas.SPACE:
-    dibujarLinea(espacio, x, y, x + movEspacio, y, paper, grozor.ESPACIO);
-    x = x + movEspacio;
+    dibujarLinea(espacio, x, y, x + movimiento + 30, y, paper, grozor.ESPACIO);
+    x = x + movimiento + 30;
     break;
     default:
     console.log("agar otra");

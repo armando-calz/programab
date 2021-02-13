@@ -8,7 +8,7 @@ if (event.keyCode === 13)
   document.getElementById("pulsador").click();
 }});
 boton.addEventListener("click", dibujoPorClick);
-var ancho = 300;
+var ancho = 500;
 var d = document.getElementById("dibujito");
 var lienzo = d.getContext("2d");
 
@@ -33,6 +33,7 @@ function dibujarLinea(color, x_inicial, y_inicial, x_final, y_final)
 function dibujoPorClick ()
 {
   lienzo.clearRect(0,0,ancho,ancho);
+  console.log(lineas);
   var lineas = parseInt(texto.value);
   var l = 0;
   var yi, xf;
