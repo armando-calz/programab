@@ -1,7 +1,52 @@
 body
 {
-background: #F9EBAC;
-color: #AAF;
-text-align: center;
-font-family: "arial";
+  font-size: 19px;
+  background: black;
+  color: #ECF0F1;
+  text-align: center;
+  font-family: "copperplate";
+}
+
+.gif
+{
+  padding-bottom: 1em;
+}
+
+.content
+{
+  font-size: 16.5px;
+  background: #ECF0F1;
+  color: black;
+  font-weight: lighter;
+  width: 25%;
+  margin: 1.5% auto;
+  border: 2.5px solid #ECF0F1;
+  border-radius: 5px;
+  margin-bottom: 1.5em;
+  padding: 0em 0 0.5em 0em;
+
+}
+
+.content-text
+{
+  text-align: left;
+  padding-left: 3em;
+}
+
+.content-buttons
+{
+  padding-bottom: 0.5em;
+}
+
+.button
+{
+  font-size: 15.5px;
+  font-family: "copperplate";
+  font-weight: lighter;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  background-color: #73C6B6;
+  color: black;
+  border: 1.5px solid #73C6B6;
+  border-radius: 2.5px;
+  box-shadow: 0.8em 0.5em 1em -0.5em black;
 }

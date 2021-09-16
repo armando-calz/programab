@@ -4,11 +4,20 @@
       <title>Tu peso en distintos planetas</title>
   </head>
   <body>
-    <h1>Tu peso en otro planeta</h1>
-    <p>Escribe tu peso:
-    <input type="text" id="textoPeso"></p>
-    <input type="button" value= "Marte" id= "botonMarte" onclick="funMarte();" />
-    <input type="button" value= "Jupiter" id= "botonJup" onclick="funJup();" />
+    <h1>Tu peso en otros planetas</h1>
+    <div class="gif">
+      <img src="https://media3.giphy.com/media/3o7WIB00yXujVt4WEo/giphy.gif?cid=ecf05e479ccxyx81plr292xz728c1s40ql8nu20opnz6s6yj&rid=giphy.gif&ct=g" alt="terra" width="300" height="300">
+    </div>
+    <div class="content">
+      <div class="content-text">
+        <p>Tu peso: <input type="text" id="textoPeso" size="23"></p>
+      </div>
+      <div class="content-buttons">
+        <input type="button" value= "Marte" class="button" onclick="funMarte();" />
+        <input type="button" value= "Jupiter" class="button" onclick="funJup();" />
+        <input type="button" value= "Sol" class="button" onclick="funSol();" />
+      </div>
+    </div>
     <script src="planetas.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="stylesheet" href="estilo.css">
